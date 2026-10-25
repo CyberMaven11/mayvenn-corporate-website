@@ -6,3 +6,7 @@ body.mayvenn-contact .page-intro h1 .accent,
 body.mayvenn-contact .page-intro .eyebrow,
 body.mayvenn-contact .page-intro-foot {color:#E7BD73!important;}
 body.mayvenn-contact .eyebrow.dark {color:#B88A3E;}
+
+/* Staging-only 5.8: frame approved AI composite above its embedded thumbnail strip; preserve all text and other pages. */
+.mayvenn-ai-hero { background-position: center top !important; }
+@media (max-width: 850px) { .mayvenn-ai-hero { background-size: auto 215% !important; background-position: 61% top !important; } }
