@@ -1,0 +1,4 @@
+
+/* 5.3: Brand consistency — only interior hero gold accents */
+.page-intro h1 em,.page-intro h1 .accent,.page-intro-inner h1 em {color:#E7BD73!important;font-style:normal!important;}
+.page-intro .eyebrow,.page-intro-inner .eyebrow {color:#E7BD73!important;}

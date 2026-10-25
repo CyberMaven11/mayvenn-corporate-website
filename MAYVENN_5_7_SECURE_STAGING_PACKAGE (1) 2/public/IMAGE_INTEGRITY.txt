@@ -1,0 +1,5 @@
+The following files are byte-for-byte copies of supplied or previously approved images, not AI regenerated or retouched in this build.
+deborah-original.webp  SHA256 bccd2bb7e8a3fa136e35f7b0a435561bb320e1fdba2499003b0cf2c8536f431a
+quincy-original.png  SHA256 dd2c50b23d5917178cbe14772e488ac1fb68b3d56dfd62c18fa9a3b8d5f73fa3
+terrance-original.png  SHA256 15ac742372a8f767f1493c3f4c648397ca97ee988d4ce64eccd29d205cf295e2
+jennifer-original.png  SHA256 7506f1fea43bb8e14bdb5471e8f0200e2223b0cf040df098b0d03598ccb5d8d9

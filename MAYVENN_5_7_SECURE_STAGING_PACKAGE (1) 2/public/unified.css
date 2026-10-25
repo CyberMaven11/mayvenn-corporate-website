@@ -1,0 +1,18 @@
+
+/* Unified opportunities portal - mobile-first */
+.mv-header{flex-wrap:wrap;gap:12px}.mv-nav{flex-wrap:wrap;row-gap:6px}.mv-nav a{white-space:nowrap}
+.mv-unified-hero{padding:70px max(28px,6vw) 56px;background:linear-gradient(117deg,#061a35,#0d3159);color:#f5f7fb;border-bottom:1px solid #b9925b55}
+.mv-unified-hero .eyebrow{color:#d1ad73;text-transform:uppercase;letter-spacing:.18em;font-size:12px;font-weight:700}
+.mv-unified-hero h1{font-size:clamp(38px,5.3vw,68px);letter-spacing:-.045em;line-height:1.08;margin:20px 0;max-width:1000px}
+.mv-unified-hero p{max-width:800px;font-size:18px;line-height:1.7;color:#cfdbeb}
+.mv-unified-wrap{background:#f5f7fa;color:#102944;padding:52px max(24px,6vw) 80px}
+.mv-unified-wrap h2{font-size:clamp(29px,3vw,43px);margin:0 0 16px}.mv-unified-wrap p{line-height:1.65}
+.mv-unified-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px;margin:28px 0 40px}
+.mv-unified-card{background:white;box-shadow:0 14px 30px #04152e12;border:1px solid #dce4ec;border-radius:12px;padding:26px;display:flex;flex-direction:column;align-items:start;gap:14px;min-height:265px}
+.mv-unified-card .eyebrow{font-size:12px;letter-spacing:.12em;color:#8a6535;font-weight:800;text-transform:uppercase}
+.mv-unified-card h3{font-size:24px;line-height:1.2;margin:0}.mv-unified-card p{margin:0;color:#4e6074;flex:1}
+.mv-unified-card a,.mv-unified-cta{display:inline-block;padding:11px 16px;background:#092748;color:white;text-decoration:none;border-radius:6px;font-weight:700}
+.mv-note{padding:18px 21px;border-left:4px solid #bb935e;background:#e8edf2;color:#3d4c5b;margin-top:14px}
+.mv-searchbar{display:flex;gap:12px;flex-wrap:wrap;align-items:center;margin:20px 0}.mv-searchbar input,.mv-searchbar select{padding:14px;border:1px solid #cbd5df;border-radius:7px;min-width:200px;flex:1;font:inherit}
+.mv-search-result{color:#485b70;margin:8px 0 25px}#mv-opportunities-list .mv-unified-card[hidden]{display:none}
+@media(max-width:870px){.mv-unified-grid{grid-template-columns:1fr}.mv-unified-hero{padding:48px 24px}.mv-unified-wrap{padding:38px 20px}}

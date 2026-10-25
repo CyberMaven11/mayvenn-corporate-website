@@ -1,0 +1,1 @@
+Mayvenn 5.4 precise patch from version 5.3. Removed AI Solutions below-hero philosophy section (no small image cards in the file). Gold-focused Contact lettering and gold footer M/wordmark. No changes to executive image assets or hero artwork. This is a local review build, not a live deployment.

@@ -1,0 +1,11 @@
+{
+  "name": "mayvenn-corporate-staging",
+  "private": true,
+  "version": "5.7.0",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

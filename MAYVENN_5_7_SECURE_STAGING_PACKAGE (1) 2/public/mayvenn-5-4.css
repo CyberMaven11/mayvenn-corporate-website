@@ -1,0 +1,8 @@
+/* Mayvenn 5.4 precision patch: gold footer and Contact page lettering only. */
+.footer .brand-name {color:#E7BD73!important;}
+.footer .brand .mark {filter:none;}
+body.mayvenn-contact .page-intro h1 em,
+body.mayvenn-contact .page-intro h1 .accent,
+body.mayvenn-contact .page-intro .eyebrow,
+body.mayvenn-contact .page-intro-foot {color:#E7BD73!important;}
+body.mayvenn-contact .eyebrow.dark {color:#B88A3E;}

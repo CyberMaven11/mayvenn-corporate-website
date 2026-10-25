@@ -1,0 +1,6 @@
+MAYVENN 5.6 - SEO-ONLY UPDATE
+Canonical domain planned: https://mayvennai.com/
+Added unique page titles/descriptions, canonical tags, social preview metadata, basic Organization structured data, robots.txt and sitemap.xml.
+No changes made to CSS, JS, images or visible body markup.
+BEFORE LAUNCH: Confirm apex domain and www redirect, production forms/opportunities, copyright/image licensing, correct live registration credentials, Search Console ownership; test performance and mobile; verify HTTP status, sitemap, robots and URL inspection after deployment.
+NOTE: Staging should be noindex or password-protected to prevent duplicate indexing.

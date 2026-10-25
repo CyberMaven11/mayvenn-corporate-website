@@ -1,0 +1,1 @@
+document.addEventListener('DOMContentLoaded',()=>{const toggle=document.getElementById('pulse-toggle');if(toggle){toggle.addEventListener('click',()=>{const el=document.querySelector('.mv-marquee');let stopped=el.classList.toggle('paused');toggle.textContent=stopped?'Play':'Pause';toggle.setAttribute('aria-pressed',stopped?'true':'false')})}});

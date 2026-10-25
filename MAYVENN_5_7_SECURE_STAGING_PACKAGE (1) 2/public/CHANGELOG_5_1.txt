@@ -1,0 +1,1 @@
+Mayvenn 5.1: Replaced Deborah E. Fuller portrait references on Home and About pages with unchanged supplied M DEBORAH E CEO.png. Preserved full Mayvenn-branded background using object-fit: contain. No facial editing or enhancement. Existing production site untouched.

@@ -1,0 +1,22 @@
+
+:root {--mayvenn-gold:#dbb675;--mayvenn-navy:#06182e}
+/* Approved rendering-inspired homepage. Native text + links remain accessible. */
+.mv-hero{background:linear-gradient(95deg,#04162d 0%,#071b34 58%,#03142b 100%);min-height:410px;display:grid;grid-template-columns:49% 51%;align-items:center;overflow:hidden}
+.mv-hero-copy{z-index:2;padding-block:44px}
+.mv-right{height:100%;width:100%;overflow:hidden;display:flex;align-items:center;justify-content:flex-end}
+.mv-right img{width:100%;height:100%;min-height:410px;object-fit:cover;object-position:center center;filter:none}
+.mv-hero h1{letter-spacing:-.025em}
+.mv-sector-list img{filter:none!important;object-fit:cover}
+.mv-sector-list>a{overflow:hidden}
+.mv-people-landscape img{object-fit:contain!important;object-position:center!important;width:50%!important;background-color:#06172c}
+.mv-people-landscape>a{min-height:154px!important}
+.mayvenn-ai-hero{background-size:cover!important;background-position:center center!important;background-repeat:no-repeat!important;min-height:470px;color:white}
+.mayvenn-ai-hero .page-intro-inner{max-width:1230px}
+.mayvenn-ai-hero h1{max-width:700px;font-size:clamp(2.2rem,4.1vw,4.6rem);line-height:1.12}
+.mayvenn-ai-hero p{max-width:580px;color:#eef3fa}
+.mayvenn-ai-hero .eyebrow{color:#e8be77}
+.ai-hero-actions{display:flex;gap:14px;flex-wrap:wrap;margin-top:22px}
+.ai-hero-actions .button{background:linear-gradient(#ffe1a8,#c99e5e);color:#081b34;border-radius:4px;padding:14px 22px;text-decoration:none;font-weight:700}
+.ai-hero-actions .button.outline{background:#05152999;color:white;border:1px solid #e3b977}
+@media (max-width:850px){.mv-hero{grid-template-columns:1fr}.mv-hero-copy{padding:42px 24px}.mv-right{min-height:260px}.mv-right img{height:260px;min-height:260px;object-fit:cover}.mayvenn-ai-hero{background-position:63% center!important}.mayvenn-ai-hero .page-intro-inner{background:linear-gradient(90deg,rgba(4,16,32,.86),rgba(4,16,32,.45));padding:38px 20px}.mv-people-landscape img{width:45%!important}}
+@media (prefers-reduced-motion: reduce){*{scroll-behavior:auto!important;animation-duration:.01ms!important;transition-duration:.01ms!important}}

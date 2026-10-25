@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 590"><defs>
+<linearGradient id="bg" x2="1" y2="1"><stop stop-color="#0b2645"/><stop offset=".56" stop-color="#0c3d64"/><stop offset="1" stop-color="#051326"/></linearGradient>
+<linearGradient id="gl" x2="0" y2="1"><stop stop-color="#8bd4ee" stop-opacity=".95"/><stop offset="1" stop-color="#285f84" stop-opacity=".3"/></linearGradient>
+<linearGradient id="metal"><stop stop-color="#243b59"/><stop offset=".5" stop-color="#c9dfe9"/><stop offset="1" stop-color="#42627d"/></linearGradient>
+<linearGradient id="window" x2="1" y2="1"><stop stop-color="#c9f1ff" stop-opacity=".85"/><stop offset="1" stop-color="#0f4c7c" stop-opacity=".3"/></linearGradient>
+<radialGradient id="halo"><stop stop-color="#7bd8ff" stop-opacity=".35"/><stop offset="1" stop-color="#7bd8ff" stop-opacity="0"/></radialGradient>
+<pattern id="grid" width="42" height="42" patternUnits="userSpaceOnUse"><path d="M 42 0 L 0 0 0 42" fill="none" stroke="#8bcee8" stroke-opacity=".09" stroke-width="1"/></pattern>
+</defs><rect width="900" height="590" fill="url(#bg)"/><rect width="900" height="590" fill="url(#grid)"/><circle cx="570" cy="245" r="320" fill="url(#halo)"/><path d="M0 508 Q380 430 900 510" fill="none" stroke="#66b6df" stroke-opacity=".35" stroke-width="2"/>
+<g transform="translate(54 30)"><path d="M20 494V140Q420-130 825 140V494" fill="#0a1f38" stroke="#81b0cb" stroke-opacity=".65" stroke-width="11"/>
+<path d="M20 140Q420-130 825 140" fill="none" stroke="#80c2e4" stroke-width="2"/><path d="M20 230H825M20 325H825" stroke="#6a95b1" stroke-opacity=".28" stroke-width="5"/>
+<path d="M417 110 L466 330 L712 411 L710 439 L467 411 L468 476 L556 505 L556 526 L421 506 L286 526 L286 505 L375 476 L376 411 L129 439 L125 411 L375 329 Z" fill="url(#metal)" stroke="#cae9f8" stroke-width="5"/>
+<path d="M417 190L437 348H397Z" fill="#123354" stroke="#a7d4eb" stroke-width="3"/><path d="M122 495H735" stroke="#b8eaff" stroke-opacity=".4" stroke-width="2"/></g><path d="M0 532H900" stroke="#7ed9ff" stroke-width="2" stroke-opacity=".35"/><g fill="#8fdaf7" fill-opacity=".7"><circle cx="85" cy="110" r="3"/><circle cx="750" cy="75" r="3"/><circle cx="827" cy="314" r="2"/><circle cx="160" cy="460" r="2"/></g></svg>

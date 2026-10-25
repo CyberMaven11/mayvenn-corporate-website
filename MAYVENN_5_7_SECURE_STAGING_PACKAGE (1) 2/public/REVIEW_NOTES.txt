@@ -1,0 +1,1 @@
+Mayvenn 4.1 review: full-face executive rendering uses original images unchanged. No AI facial editing performed. Preview assets are not a substitute for final licensing review of sectors, backend integrations, security, and browser QA. No production publishing performed.

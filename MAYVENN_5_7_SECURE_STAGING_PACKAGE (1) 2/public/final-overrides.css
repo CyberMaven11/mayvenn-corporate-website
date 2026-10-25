@@ -1,0 +1,5 @@
+/* Final Mayvenn 4.0 staging refinements; approved images are never AI altered. */
+.leader-image{background:#061930!important;overflow:hidden!important;display:flex!important;align-items:center!important;justify-content:center!important;}
+.leader-image img{width:100%!important;height:100%!important;object-fit:contain!important;object-position:center center!important;}
+.mv-people a img{object-fit:contain!important;object-position:center center!important;background:#061930!important;}
+@media(max-width:820px){.mv-people a img{object-fit:contain!important;}.leader-image img{object-fit:contain!important;}}
