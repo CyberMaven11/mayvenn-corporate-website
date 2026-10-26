@@ -24,6 +24,7 @@ async function contact(req,res){
   if(!name||!org||!email||!interest||!message||!/^[^\s@<>]+@[^\s@<>]+\.[^\s@<>]+$/.test(email))return send(res,400,{error:'Please complete all required fields with a valid email address.'});
   let attachment;
   if(data.resume!==undefined&&data.resume!==null){
+    if(data.resume_consent!==true)return send(res,400,{error:'Résumé review consent is required.'});
     const r=data.resume;
     if(!r||typeof r!=='object'||typeof r.filename!=='string'||typeof r.content!=='string')return send(res,400,{error:'Invalid résumé attachment.'});
     const filename=path.basename(r.filename).replace(/[^a-zA-Z0-9._ -]/g,'_').slice(0,100);
