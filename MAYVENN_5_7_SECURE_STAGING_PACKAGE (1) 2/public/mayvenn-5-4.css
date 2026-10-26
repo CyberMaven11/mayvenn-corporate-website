@@ -10,3 +10,13 @@ body.mayvenn-contact .eyebrow.dark {color:#B88A3E;}
 /* Staging-only 5.8: frame approved AI composite above its embedded thumbnail strip; preserve all text and other pages. */
 .mayvenn-ai-hero { background-position: center top !important; }
 @media (max-width: 850px) { .mayvenn-ai-hero { background-size: auto 215% !important; background-position: 61% top !important; } }
+
+/* Staging homepage precision refinements: keep approved portraits unchanged. */
+.mv-people.mv-people-landscape>a{min-width:0;isolation:isolate}
+.mv-people.mv-people-landscape>a img{display:block;width:100%!important;height:100%!important;object-fit:contain!important;object-position:center center!important;background:#061930!important}
+.mv-people.mv-people-landscape>a:after{pointer-events:none}
+.mv-people.mv-people-landscape>a span{left:10px;right:10px;overflow-wrap:anywhere;text-shadow:0 1px 4px #001021}
+.mv-pulse{min-width:0;gap:12px}
+.mv-pulse .mv-marquee{min-width:0;overflow:hidden;mask-image:linear-gradient(90deg,transparent,#000 2%,#000 98%,transparent);-webkit-mask-image:linear-gradient(90deg,transparent,#000 2%,#000 98%,transparent)}
+.mv-pulse #pulse-toggle{flex:0 0 auto;min-width:44px}
+@media(max-width:680px){.mv-pulse{gap:8px}.mv-pulse strong{letter-spacing:.06em}}
