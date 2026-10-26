@@ -27,3 +27,6 @@ body.mayvenn-contact .eyebrow.dark {color:#B88A3E;}
   .leader-image{min-height:0!important;max-height:none!important;height:auto!important;align-self:stretch!important;display:flex!important;align-items:center!important;justify-content:center!important;background:#061930!important}
   .leader-image img{width:100%!important;height:auto!important;min-height:0!important;max-height:none!important;object-fit:contain!important;object-position:center center!important;display:block!important}
 }
+
+/* Keep the original landscape image at its natural ratio; avoid a tall navy frame. */
+@media(min-width:521px){.leader-image{align-self:center!important;height:auto!important;background:transparent!important}.leader-image img{aspect-ratio:auto!important}}
