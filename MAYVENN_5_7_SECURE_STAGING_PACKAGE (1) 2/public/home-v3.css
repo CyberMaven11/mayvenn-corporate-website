@@ -7,3 +7,12 @@
 @media(max-width:1150px){.mv-header{padding:0 3%}.mv-nav{gap:19px}.mv-hero-copy{padding-left:6%}.mv-caps{grid-template-columns:repeat(2,1fr)}.mv-strip-intro{grid-column:1/-1}.mv-sectors{grid-template-columns:1fr}.mv-sector-title h2 br{display:none}.mv-leadership{grid-template-columns:1fr}.mv-people>a{height:205px}}
 @media(max-width:680px){.mv-header{height:auto;min-height:64px;flex-wrap:wrap;padding:12px 5%}.mv-nav{width:100%;gap:10px 16px;flex-wrap:wrap}.mv-nav a{font-size:12px}.mv-partner{font-size:11px;padding:9px 12px}.mv-pulse{height:35px;padding:0 4%}.mv-pulse strong{font-size:9px;letter-spacing:1px}.mv-hero{grid-template-columns:1fr}.mv-hero-copy{padding:27px 5%;}.mv-hero h1{font-size:clamp(38px,10vw,55px)}.mv-intro{font-size:14px}.mv-proof{gap:15px;font-size:8px}.mv-right{height:310px}.mv-right img{mask-image:none;object-fit:cover}.mv-right p{bottom:12px;left:10%;font-size:8px}.mv-caps{grid-template-columns:1fr;padding:20px 5%}.mv-sectors{padding:24px 5%}.mv-sector-list{grid-template-columns:repeat(2,1fr)}.mv-sector-list a:last-child{grid-column:1/-1}.mv-leadership{padding:24px 5%}.mv-people{grid-template-columns:repeat(2,1fr)}.mv-people>a{height:230px}.mv-footer{flex-direction:column}.desktop-only{display:none}}
 @media(prefers-reduced-motion:reduce){.mv-marquee-track{animation:none}}
+/* Mayvenn relaunch: intentional audience pathways and restrained gold accents */
+.mv-hero h1 em{color:#e8c77d;font-style:italic}
+.mv-pathways{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;margin-top:22px;max-width:650px}
+.mv-pathways a{display:flex;flex-direction:column;gap:7px;padding:15px 14px;background:rgba(10,31,56,.78);border:1px solid rgba(232,199,125,.45);border-radius:7px;color:#fff;transition:background .2s,border-color .2s}
+.mv-pathways a:hover,.mv-pathways a:focus-visible{background:#173957;border-color:#e8c77d}
+.mv-pathways strong{font-size:13px}.mv-pathways span{font-size:11px;line-height:1.4;color:#d6dfe9}
+.mv-footer-brand{display:flex;align-items:center;gap:13px}.mv-footer-mark{font:700 30px Georgia,serif;color:#e8c77d;line-height:1}.mv-footer a{color:#e8c77d}
+.mv-credential a img{vertical-align:middle;margin-right:8px;object-fit:contain}
+@media(max-width:680px){.mv-pathways{grid-template-columns:1fr;margin-top:20px}.mv-pathways a{padding:13px}.mv-hero-copy{padding-bottom:22px}}
