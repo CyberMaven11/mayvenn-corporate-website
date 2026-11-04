@@ -30,3 +30,9 @@ body.mayvenn-contact .eyebrow.dark {color:#B88A3E;}
 
 /* Keep the original landscape image at its natural ratio; avoid a tall navy frame. */
 @media(min-width:521px){.leader-image{align-self:center!important;height:auto!important;background:transparent!important}.leader-image img{aspect-ratio:auto!important}}
+
+/* Federal entity section: SAM.gov verification card directly beneath identifiers */
+.mv-credentials{display:flex;flex-direction:column;align-items:stretch;gap:10px}
+.mv-sam-card{border:1px solid rgba(223,185,116,.4);border-radius:8px;background:#102c4b;padding:12px 16px}
+.mv-sam-card a{display:flex;align-items:center;gap:12px;color:#e8c77d;text-decoration:none;font-size:13px}
+.mv-sam-card img{width:94px;height:28px;object-fit:contain}
