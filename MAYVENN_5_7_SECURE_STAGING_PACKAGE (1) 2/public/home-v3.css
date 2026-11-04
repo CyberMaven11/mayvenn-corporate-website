@@ -33,3 +33,13 @@
 .mv-people small{font-size:11px;line-height:1.35}
 @media(max-width:1150px){.mv-leadership{grid-template-columns:1fr}.mv-people>a{height:230px}}
 @media(max-width:680px){.mv-sector-list{grid-template-columns:repeat(2,minmax(0,1fr))}.mv-sector-list a{height:67px;padding:0 12px}.mv-sector-list a:last-child{grid-column:1/-1}.mv-sector-list a span{font-size:13px}.mv-leadership{padding:27px 5%}.mv-people{grid-template-columns:repeat(2,minmax(0,1fr))}.mv-people>a{height:245px}}
+
+/* Homepage review: preserve cinematic sector photography and gold/navy identity */
+.mv-sector-list a{height:112px;display:block;padding:0;position:relative;overflow:hidden;background:#082649;border:1px solid #b99a60}
+.mv-sector-list a img{display:block;width:100%;height:100%;object-fit:cover;filter:none}
+.mv-sector-list a:after{display:block;content:"";position:absolute;inset:45% 0 0;background:linear-gradient(transparent,rgba(0,16,32,.88))}
+.mv-sector-list a span{position:absolute;bottom:9px;left:12px;right:11px;width:auto;z-index:2;display:flex;color:#fff;font:14px Georgia,serif;justify-content:space-between}
+.mv-sector-list a span b{margin-left:auto;color:#e8c77d}
+.mv-nav .on{border-bottom-color:#e8c77d}
+.mv-nav a:hover{color:#e8c77d}
+@media(max-width:680px){.mv-sector-list a{height:120px;padding:0}.mv-sector-list a:last-child{grid-column:1/-1}}
