@@ -6,7 +6,7 @@ const crypto=require('node:crypto');
 const ROOT=path.resolve(__dirname,'public');
 const PORT=Number(process.env.PORT||3000);
 const RATE=new Map();
-const MIME={'.html':'text/html; charset=utf-8','.css':'text/css; charset=utf-8','.js':'application/javascript; charset=utf-8','.png':'image/png','.jpg':'image/jpeg','.jpeg':'image/jpeg','.webp':'image/webp','.svg':'image/svg+xml','.xml':'application/xml; charset=utf-8','.txt':'text/plain; charset=utf-8','.ico':'image/x-icon'};
+const MIME={'.html':'text/html; charset=utf-8','.css':'text/css; charset=utf-8','.js':'application/javascript; charset=utf-8','.png':'image/png','.jpg':'image/jpeg','.jpeg':'image/jpeg','.webp':'image/webp','.svg':'image/svg+xml','.xml':'application/xml; charset=utf-8','.txt':'text/plain; charset=utf-8','.ico':'image/x-icon','.mp4':'video/mp4','.webm':'video/webm'};
 function send(res,status,body,headers={}){res.writeHead(status,{'Content-Type':'application/json; charset=utf-8','Cache-Control':'no-store','X-Content-Type-Options':'nosniff','Referrer-Policy':'strict-origin-when-cross-origin','X-Frame-Options':'DENY',...headers});res.end(JSON.stringify(body));}
 function str(x,max){return typeof x==='string'&&x.length<=max?x.trim():null;}
 function clean(x){return x.replace(/[\r\n\t]/g,' ').replace(/[<>]/g,'').slice(0,4000);}
@@ -53,5 +53,15 @@ const server=http.createServer(async(req,res)=>{
   if(full!==ROOT&&!full.startsWith(ROOT+path.sep))return send(res,403,{error:'Forbidden'});
   let stat;try{stat=fs.statSync(full);}catch{return send(res,404,{error:'Not found'});}
   if(!stat.isFile())return send(res,404,{error:'Not found'});
-  const ext=path.extname(full).toLowerCase();res.writeHead(200,{'Content-Type':MIME[ext]||'application/octet-stream','X-Content-Type-Options':'nosniff','X-Frame-Options':'DENY','Referrer-Policy':'strict-origin-when-cross-origin',...(process.env.STAGING_MODE==='true'?{'X-Robots-Tag':'noindex, nofollow'}:{})});if(req.method==='HEAD')return res.end();fs.createReadStream(full).pipe(res);
+  const ext=path.extname(full).toLowerCase();const headers={'Content-Type':MIME[ext]||'application/octet-stream','X-Content-Type-Options':'nosniff','X-Frame-Options':'DENY','Referrer-Policy':'strict-origin-when-cross-origin',...(process.env.STAGING_MODE==='true'?{'X-Robots-Tag':'noindex, nofollow'}:{})};
+  if(ext==='.mp4'||ext==='.webm'){
+    headers['Accept-Ranges']='bytes';const range=req.headers.range;
+    if(range){const m=/^bytes=(\d*)-(\d*)$/.exec(range);if(!m)return res.writeHead(416,{...headers,'Content-Range':'bytes */'+stat.size}).end();
+      const start=m[1]?Number(m[1]):Math.max(0,stat.size-Number(m[2]||0));
+      const end=m[1]?(m[2]?Math.min(Number(m[2]),stat.size-1):stat.size-1):stat.size-1;
+      if(!Number.isSafeInteger(start)||!Number.isSafeInteger(end)||start>=stat.size||start>end)return res.writeHead(416,{...headers,'Content-Range':'bytes */'+stat.size}).end();
+      res.writeHead(206,{...headers,'Content-Range':'bytes '+start+'-'+end+'/'+stat.size,'Content-Length':end-start+1});if(req.method==='HEAD')return res.end();return fs.createReadStream(full,{start,end}).pipe(res);
+    }
+  }
+  res.writeHead(200,{...headers,'Content-Length':stat.size});if(req.method==='HEAD')return res.end();fs.createReadStream(full).pipe(res);
 });server.listen(PORT,'0.0.0.0',()=>console.log('Mayvenn server listening on '+PORT));
