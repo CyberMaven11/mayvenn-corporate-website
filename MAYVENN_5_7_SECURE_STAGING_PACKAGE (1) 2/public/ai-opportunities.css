@@ -48,3 +48,10 @@ footer .brand-emblem{font-size:64px}footer .brand-name{font-size:34px}
 footer>div:last-child{font-size:10px;color:#8b9fb3;margin-top:20px}
 @media(max-width:1100px){header{flex-wrap:wrap;justify-content:center}.hero:before{background-size:auto 95%;background-position:right -150px center}.hero-copy{max-width:800px}.hero h1{font-size:43px}}
 @media(max-width:700px){header{padding:14px 4%}nav{justify-content:center}.brand-emblem{font-size:40px}.brand-name{font-size:24px}.hero{min-height:520px}.hero:before{background:linear-gradient(180deg,#031124f5 0%,#031124e8 55%,#0311247a 100%),url('assets/mayvenn-orbital-globe.svg') center bottom/auto 68% no-repeat}.hero-copy{padding:40px 6% 130px}.hero h1{font-size:35px}.hero p{font-size:15px}.hero p b{font-size:19px}.pathways{grid-template-columns:1fr;padding:12px 5%}.path{min-height:215px}.brand-tagline{font-size:10px;letter-spacing:.1em}}
+
+/* Approved uploaded media replaces provisional SVG and simulated text logo. */
+.brand-lockup .approved-logo{display:block;width:clamp(175px,20vw,265px);height:auto;max-height:68px;object-fit:contain;object-position:left center}
+footer .brand-lockup .approved-logo{width:300px;max-height:none}
+.hero:before{background:linear-gradient(90deg,#031124 0%,#031124fa 26%,#031124d8 43%,#03112445 65%,#03112400 82%),url('assets/mayvenn-approved-globe-hero.webp') right center/auto 112% no-repeat;opacity:1}
+@media(max-width:1100px){.hero:before{background:linear-gradient(90deg,#031124 0%,#031124ee 37%,#0311247c 67%),url('assets/mayvenn-approved-globe-hero.webp') right -100px center/auto 100% no-repeat}}
+@media(max-width:700px){.hero:before{background:linear-gradient(180deg,#031124f8 0%,#031124e8 52%,#03112475 100%),url('assets/mayvenn-approved-globe-hero.webp') center bottom/auto 65% no-repeat}.brand-lockup .approved-logo{width:220px}}
