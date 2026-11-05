@@ -76,3 +76,7 @@ footer .brand-lockup .approved-logo{width:300px;max-height:none}
 
 /* Ensure hidden placeholders never render alongside video */
 .video-placeholder[hidden],video[hidden]{display:none!important}
+
+.system-logo .system-brand-wordmark{font:800 clamp(12px,1.4vw,18px)/1.25 Arial,Helvetica,sans-serif;letter-spacing:-.02em;text-align:center}
+.system-logo img{width:46px;height:46px;object-fit:contain}
+.business-video-wrap video{display:block;width:100%;aspect-ratio:16/9;background:#020b16;border:1px solid #d5ad6860;border-radius:10px}
