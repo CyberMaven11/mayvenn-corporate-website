@@ -1,0 +1,12 @@
+/* Streamlined AI Opportunities gateway and audience pages */
+.gateway-pathways{margin:0 auto!important;padding-top:42px!important;padding-bottom:58px!important;gap:22px!important}
+.gateway-pathways .path{min-height:240px!important;padding:30px!important;display:flex;flex-direction:column;justify-content:space-between}
+.gateway-pathways .path p{max-width:28ch}
+.gateway-pathways .path a{margin-top:18px}
+.audience-intro{padding:76px max(5%,calc((100vw - 1200px)/2)) 58px;background:radial-gradient(ellipse at 90% 10%,#244466 0%,transparent 50%),linear-gradient(120deg,#06172c,#030e1e);border-bottom:1px solid #d5ad6850}
+.audience-intro h1{font:clamp(35px,4.6vw,64px)/1.13 Georgia,serif;max-width:900px;color:#f4f5f8;margin:18px 0}
+.audience-intro h1 em{color:#e2b875}
+.audience-intro p{max-width:850px;color:#c9d3e0;font-size:17px;line-height:1.65}
+.audience-intro .backlink{color:#d5ad68;text-decoration:none;font:600 13px Arial,sans-serif}
+.gateway-pathways+.executive{border-top:1px solid #d5ad6840}
+@media(max-width:700px){.audience-intro{padding:44px 6% 35px}.gateway-pathways .path{min-height:195px}}
