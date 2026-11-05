@@ -80,3 +80,11 @@ footer .brand-lockup .approved-logo{width:300px;max-height:none}
 .system-logo .system-brand-wordmark{font:800 clamp(12px,1.4vw,18px)/1.25 Arial,Helvetica,sans-serif;letter-spacing:-.02em;text-align:center}
 .system-logo img{width:46px;height:46px;object-fit:contain}
 .business-video-wrap video{display:block;width:100%;aspect-ratio:16/9;background:#020b16;border:1px solid #d5ad6860;border-radius:10px}
+
+/* Recognizable business systems gallery */
+.business-system-logo-grid{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:14px;margin-top:28px}
+.business-system-tile{min-height:116px;padding:16px 10px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:12px;background:#102b48;border:1px solid #d5ad6830;border-radius:12px;text-align:center}
+.business-system-tile img{width:44px;height:44px;object-fit:contain;flex-shrink:0}
+.business-system-tile span{font:600 13px/1.35 Arial,Helvetica,sans-serif;color:#f2f5fa}
+@media(max-width:850px){.business-system-logo-grid{grid-template-columns:repeat(3,minmax(0,1fr))}}
+@media(max-width:500px){.business-system-logo-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.business-system-tile{min-height:105px}}
