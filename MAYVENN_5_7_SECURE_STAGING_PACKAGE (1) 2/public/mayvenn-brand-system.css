@@ -1,0 +1,19 @@
+/* MAYVENN AI approved corporate visual system — staging */
+:root{--mayvenn-midnight:#031124;--mayvenn-navy:#061a31;--mayvenn-gold:#d5ad68;--mayvenn-platinum:#e5e9ef}
+body{background-color:var(--mayvenn-midnight)}
+.mv-unified-header,.mv-unified-footer{box-sizing:border-box;background:#031124!important;color:#e5e9ef!important;font-family:Arial,Helvetica,sans-serif!important}
+.mv-unified-header *,.mv-unified-footer *{box-sizing:border-box}
+.mv-unified-header{position:relative!important;top:auto!important;z-index:90;display:flex!important;align-items:center!important;justify-content:space-between!important;flex-wrap:wrap;gap:16px;padding:14px max(4%,calc((100vw - 1450px)/2))!important;border-bottom:1px solid #d5ad6860!important;box-shadow:0 4px 22px #0005!important;min-height:86px}
+.mv-unified-header .mv-unified-logo,.mv-unified-footer .mv-unified-logo{display:inline-flex!important;align-items:center!important;flex:0 0 auto!important;padding:0!important;margin:0!important;background:none!important;border:0!important;box-shadow:none!important;text-decoration:none!important}
+.mv-unified-logo img{display:block;width:clamp(185px,18vw,260px);height:auto;max-height:72px;object-fit:contain}
+.mv-unified-nav{display:flex!important;align-items:center!important;justify-content:flex-end!important;gap:clamp(10px,1.5vw,23px)!important;flex-wrap:wrap!important;position:static!important;opacity:1!important;visibility:visible!important;width:auto!important;max-width:none!important;transform:none!important;background:transparent!important;padding:0!important;margin:0!important;box-shadow:none!important}
+.mv-unified-nav a{display:inline-block!important;position:relative!important;color:#e5e9ef!important;background:none!important;border:0!important;border-radius:0!important;box-shadow:none!important;padding:8px 0!important;margin:0!important;text-decoration:none!important;font:500 12px/1.5 Arial,Helvetica,sans-serif!important;letter-spacing:.025em!important;white-space:nowrap}
+.mv-unified-nav a:hover,.mv-unified-nav a[aria-current="page"]{color:#e5bc74!important}
+.mv-unified-nav a[aria-current="page"]:after{content:"";position:absolute;left:0;right:0;bottom:2px;height:1px;background:#d5ad68}
+.mv-unified-footer{display:flex!important;align-items:center!important;justify-content:center!important;flex-direction:column!important;gap:14px!important;text-align:center!important;padding:38px 5% 30px!important;border-top:1px solid #d5ad6860!important}
+.mv-unified-footer .mv-unified-logo img{width:min(300px,80vw);max-height:100px}
+.mv-unified-footer .mv-unified-tagline{color:#e5e9ef!important;font:500 11px/1.7 Arial,Helvetica,sans-serif!important;letter-spacing:.15em!important;margin:0!important;text-transform:uppercase!important}
+.mv-unified-footer .mv-unified-legal{color:#9eacbd!important;font:11px/1.6 Arial,Helvetica,sans-serif!important;margin:0!important}
+.mv-unified-footer .mv-unified-legal a{color:#d5ad68!important;text-decoration:none!important}
+@media(max-width:1000px){.mv-unified-header{justify-content:center!important}.mv-unified-nav{justify-content:center!important}}
+@media(max-width:600px){.mv-unified-header{padding:14px 4%!important}.mv-unified-nav{gap:7px 15px!important}.mv-unified-nav a{font-size:11px!important}.mv-unified-logo img{width:220px}.mv-unified-footer .mv-unified-tagline{font-size:10px!important;letter-spacing:.08em!important}}
