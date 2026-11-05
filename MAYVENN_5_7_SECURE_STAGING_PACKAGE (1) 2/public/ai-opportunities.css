@@ -16,3 +16,35 @@ header{background:#041224;border-bottom-color:rgba(215,174,102,.28)}
 .path{background:linear-gradient(160deg,#102b47,#06182c 85%);box-shadow:0 12px 24px #0004}
 @media(max-width:1000px){.hero:before{background-size:auto 86%;background-position:right -120px center;opacity:.8}}
 @media(max-width:600px){.hero{min-height:620px}.hero:before{background:linear-gradient(180deg,#031124ee 0%,#031124d9 57%,#031124b8 100%),url('assets/mayvenn-orbital-globe.svg') center bottom/auto 62% no-repeat;opacity:.75}.hero-copy{padding-top:52px;padding-bottom:65px}.hero h1{font-size:36px}}
+
+/* Locked MAYVENN executive design system: gold/platinum, deep navy, no bright LED frames. */
+:root{--n:#031124;--n2:#071d37;--g:#d5ad68;--l:rgba(210,171,103,.36)}
+body{background:#031124}
+header{padding:11px 5%;min-height:76px;gap:30px;box-shadow:0 3px 20px #0005}
+.brand-lockup{display:inline-flex;align-items:center;gap:9px;letter-spacing:0;flex-shrink:0}
+.brand-emblem{font:700 51px/.95 Georgia,serif;letter-spacing:-.12em;padding-right:9px;color:#dfb65d;background:linear-gradient(120deg,#a66a19 5%,#fff1bf 25%,#d5a141 44%,#fff0b4 60%,#855214 95%);background-clip:text;-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+.brand-name{font:normal clamp(18px,2.1vw,31px)/1 Georgia,serif;letter-spacing:.035em;background:linear-gradient(180deg,#fff 0%,#e6e8ee 45%,#8f9cb0 100%);background-clip:text;-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+.brand-ai{padding-left:5px;background:linear-gradient(140deg,#fff0b9,#c9923c 60%,#f3cf7a);background-clip:text;-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+nav{gap:clamp(10px,1.8vw,28px);align-items:center}nav a{font-size:13px;color:#f1f3f6}nav a.active{color:#f3d28b;border-bottom:1px solid #d5ad68;padding-bottom:13px}
+.hero{min-height:420px;align-items:center;background:#031124}
+.hero-copy{padding:54px 5% 62px;max-width:1050px}
+.hero h1{font:normal clamp(36px,3.5vw,55px)/1.1 Georgia,serif;letter-spacing:-.022em;margin:16px 0}
+.hero h1 em{font-style:italic;color:#e0b76d}
+.hero p{font-size:17px;line-height:1.48;max-width:670px}
+.hero p b{font:italic 23px Georgia,serif;color:#fff}
+.hero:before{background:linear-gradient(90deg,#031124 0%,#031124fa 30%,#031124dc 44%,#03112422 71%),url('assets/mayvenn-orbital-globe.svg') right center/auto 120% no-repeat;opacity:1}
+.pathways{margin:0 auto;max-width:none;padding:14px 4% 28px;gap:18px;background:#031124}
+.path{min-height:264px;padding:32px 25px 24px;border:1px solid #a88750;background:linear-gradient(180deg,#0e3555 0%,#061a30 45%,#031124 100%);box-shadow:none}
+.path h2{font-size:clamp(23px,2.1vw,34px);line-height:1.08;color:#e3bd75;margin:16px 0 8px}
+.path p{font-size:15px;color:#fff;line-height:1.45}
+.path a{display:block;align-self:center;text-align:center;background:#d4a554;color:#051327;border:1px solid #e1b96d;border-radius:3px;padding:13px 16px;width:min(100%,330px);font-weight:700}
+.path a:hover{background:#e2bd77}
+.systems{padding-top:36px;padding-bottom:36px;background:#061a31}
+.systems .system-grid{display:flex;flex-wrap:wrap;gap:12px;align-items:center}
+.systems .system-grid span{background:transparent;border:0;padding:8px 12px;font-weight:700;font-size:14px;color:#e7edf6}
+footer{background:#031124;display:flex;align-items:center;flex-direction:column;text-align:center;padding:35px 5%}
+footer .brand-emblem{font-size:64px}footer .brand-name{font-size:34px}
+.brand-tagline{font-size:12px;letter-spacing:.19em;color:#e8e8ec;margin-top:17px}
+footer>div:last-child{font-size:10px;color:#8b9fb3;margin-top:20px}
+@media(max-width:1100px){header{flex-wrap:wrap;justify-content:center}.hero:before{background-size:auto 95%;background-position:right -150px center}.hero-copy{max-width:800px}.hero h1{font-size:43px}}
+@media(max-width:700px){header{padding:14px 4%}nav{justify-content:center}.brand-emblem{font-size:40px}.brand-name{font-size:24px}.hero{min-height:520px}.hero:before{background:linear-gradient(180deg,#031124f5 0%,#031124e8 55%,#0311247a 100%),url('assets/mayvenn-orbital-globe.svg') center bottom/auto 68% no-repeat}.hero-copy{padding:40px 6% 130px}.hero h1{font-size:35px}.hero p{font-size:15px}.hero p b{font-size:19px}.pathways{grid-template-columns:1fr;padding:12px 5%}.path{min-height:215px}.brand-tagline{font-size:10px;letter-spacing:.1em}}
