@@ -49,7 +49,7 @@ const server=http.createServer(async(req,res)=>{
   if(req.url==='/api/contact'){if(req.method!=='POST')return send(res,405,{error:'Method not allowed.'},{Allow:'POST'});return contact(req,res);}
   if(req.method!=='GET'&&req.method!=='HEAD')return send(res,405,{error:'Method not allowed.'});
   let pathname;try{pathname=decodeURIComponent(new URL(req.url,'http://localhost').pathname);}catch{return send(res,400,{error:'Invalid path.'});}
-  const requested=pathname==='/'?'/index.html':pathname;const full=path.resolve(ROOT,'.'+requested);
+  const requested=pathname==='/'?'/index.html':(pathname==='/ai-opportunities'||pathname==='/ai-opportunities/'?'/ai-opportunities.html':pathname);const full=path.resolve(ROOT,'.'+requested);
   if(full!==ROOT&&!full.startsWith(ROOT+path.sep))return send(res,403,{error:'Forbidden'});
   let stat;try{stat=fs.statSync(full);}catch{return send(res,404,{error:'Not found'});}
   if(!stat.isFile())return send(res,404,{error:'Not found'});
