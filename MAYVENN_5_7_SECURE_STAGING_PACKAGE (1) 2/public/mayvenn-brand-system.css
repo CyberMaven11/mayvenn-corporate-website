@@ -25,3 +25,11 @@ body{background-color:var(--mayvenn-midnight)}
 .mv-affiliations .mv-sam-card a{display:flex!important;align-items:center!important;justify-content:center!important;flex-wrap:wrap!important;gap:12px!important;text-align:center!important;line-height:1.5!important}
 .mv-affiliations .mv-sam-card img{display:block!important;width:94px!important;height:28px!important;object-fit:contain!important;flex-shrink:0!important}
 @media(max-width:650px){.mv-affiliations .mv-affiliations-inner{align-items:stretch!important}.mv-affiliations .mv-credentials{width:100%!important}.mv-affiliations .mv-sam-card a{gap:8px!important}}
+
+/* Federal identifiers must read vertically, never in a side-by-side grid. */
+.mv-affiliations .mv-affiliations-inner{display:block!important;max-width:1080px!important;margin-inline:auto!important}
+.mv-affiliations .mv-federal-stack{display:flex!important;flex-direction:column!important;align-items:flex-start!important;width:100%!important;max-width:800px!important;margin:0 auto!important}
+.mv-affiliations .mv-federal-stack>.mv-credentials{width:100%!important;max-width:540px!important;margin-top:20px!important;align-self:flex-start!important}
+.mv-affiliations .mv-federal-stack>.mv-credentials .mv-credential{width:100%!important;box-sizing:border-box!important}
+.mv-affiliations .mv-federal-stack>.mv-credentials .mv-sam-card{width:100%!important}
+@media(max-width:650px){.mv-affiliations .mv-federal-stack{max-width:100%!important}.mv-affiliations .mv-federal-stack>.mv-credentials{max-width:100%!important}}
