@@ -17,3 +17,11 @@ body{background-color:var(--mayvenn-midnight)}
 .mv-unified-footer .mv-unified-legal a{color:#d5ad68!important;text-decoration:none!important}
 @media(max-width:1000px){.mv-unified-header{justify-content:center!important}.mv-unified-nav{justify-content:center!important}}
 @media(max-width:600px){.mv-unified-header{padding:14px 4%!important}.mv-unified-nav{gap:7px 15px!important}.mv-unified-nav a{font-size:11px!important}.mv-unified-logo img{width:220px}.mv-unified-footer .mv-unified-tagline{font-size:10px!important;letter-spacing:.08em!important}}
+
+/* Corporate homepage federal contracting/SAM.gov block: precise visual alignment. */
+.mv-affiliations .mv-affiliations-inner{align-items:center!important}
+.mv-affiliations .mv-credentials{display:flex!important;flex-direction:column!important;align-items:stretch!important;justify-content:center!important;gap:12px!important;min-width:0!important}
+.mv-affiliations .mv-sam-card{display:flex!important;align-items:center!important;justify-content:center!important;width:100%!important;box-sizing:border-box!important}
+.mv-affiliations .mv-sam-card a{display:flex!important;align-items:center!important;justify-content:center!important;flex-wrap:wrap!important;gap:12px!important;text-align:center!important;line-height:1.5!important}
+.mv-affiliations .mv-sam-card img{display:block!important;width:94px!important;height:28px!important;object-fit:contain!important;flex-shrink:0!important}
+@media(max-width:650px){.mv-affiliations .mv-affiliations-inner{align-items:stretch!important}.mv-affiliations .mv-credentials{width:100%!important}.mv-affiliations .mv-sam-card a{gap:8px!important}}
